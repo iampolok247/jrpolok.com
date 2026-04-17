@@ -41,19 +41,16 @@ jobs:
           VITE_EMAILJS_TEMPLATE_ID: ${{ secrets.VITE_EMAILJS_TEMPLATE_ID }}
           VITE_EMAILJS_PUBLIC_KEY: ${{ secrets.VITE_EMAILJS_PUBLIC_KEY }}
 
-      # ৫. FTP Deploy → cPanel domain folder (parked/addon domain support)
-      - name: Deploy to cPanel via FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      # ৫. SFTP Deploy → cPanel via SSH (port 22)
+      - name: Deploy to cPanel via SFTP
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
-          server: ${{ secrets.FTP_SERVER }}        # e.g. ftp.jrpolok.com
-          username: ${{ secrets.FTP_USERNAME }}    # cPanel FTP username
-          password: ${{ secrets.FTP_PASSWORD }}    # cPanel FTP password
-          protocol: ftps                           # FTPS (port 990) — cPanel blocks plain FTP
-          port: 21
-          local-dir: reeni/dist/                   # Vite build output folder
-          server-dir: ${{ secrets.FTP_SERVER_DIR }} # e.g. /jrpolok.com/ or /public_html/
-          dangerous-clean-slate: false
-          exclude: |
-            **/.git*
-            **/.git*/**
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          port: 22
+          local_path: reeni/dist/*
+          remote_path: ${{ secrets.FTP_SERVER_DIR }}
+          sftp_only: true
+          delete_remote_files: false
             **/node_modules/**
