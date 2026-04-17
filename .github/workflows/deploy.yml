@@ -16,13 +16,13 @@ jobs:
     steps:
       # ১. Code checkout
       - name: Checkout Repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       # ২. Node.js setup
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
-          node-version: "20"
+          node-version: "22"
           cache: "npm"
           cache-dependency-path: reeni/package-lock.json
 
@@ -45,7 +45,7 @@ jobs:
       - name: Install SSH Tools
         run: |
           sudo apt-get update
-          sudo apt-get install -y sshpass rsync
+          sudo apt-get install -y sshpass
 
       # ৬. Add server to known_hosts
       - name: Setup Known Hosts
@@ -53,10 +53,8 @@ jobs:
           mkdir -p ~/.ssh
           ssh-keyscan -H ${{ secrets.FTP_SERVER }} >> ~/.ssh/known_hosts
 
-      # ৭. rsync দিয়ে deploy → cPanel
-      - name: Deploy via rsync over SSH
+      # ৭. shared hosting-friendly deploy via SSH + SCP
+      - name: Deploy via SCP over SSH
         run: |
-          sshpass -p "${{ secrets.FTP_PASSWORD }}" rsync -avz --delete \
-            -e "ssh -p 22 -o StrictHostKeyChecking=no" \
-            reeni/dist/ \
-            ${{ secrets.FTP_USERNAME }}@${{ secrets.FTP_SERVER }}:${{ secrets.FTP_SERVER_DIR }}
+          sshpass -p "${{ secrets.FTP_PASSWORD }}" ssh -p 22 -o StrictHostKeyChecking=no ${{ secrets.FTP_USERNAME }}@${{ secrets.FTP_SERVER }} "mkdir -p '${{ secrets.FTP_SERVER_DIR }}'"
+          sshpass -p "${{ secrets.FTP_PASSWORD }}" scp -P 22 -o StrictHostKeyChecking=no -r reeni/dist/* ${{ secrets.FTP_USERNAME }}@${{ secrets.FTP_SERVER }}:${{ secrets.FTP_SERVER_DIR }}
