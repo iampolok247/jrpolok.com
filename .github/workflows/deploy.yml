@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main  # main branch-এ push হলেই auto deploy হবে
+  workflow_dispatch: # চাইলে Actions tab থেকে manual deploy
 
 jobs:
   build-and-deploy:
@@ -38,7 +39,7 @@ jobs:
           VITE_EMAILJS_TEMPLATE_ID: ${{ secrets.VITE_EMAILJS_TEMPLATE_ID }}
           VITE_EMAILJS_PUBLIC_KEY: ${{ secrets.VITE_EMAILJS_PUBLIC_KEY }}
 
-      # ৫. FTP Deploy → cPanel public_html
+      # ৫. FTP Deploy → cPanel domain folder (parked/addon domain support)
       - name: Deploy to cPanel via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
@@ -46,7 +47,7 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}    # cPanel FTP username
           password: ${{ secrets.FTP_PASSWORD }}    # cPanel FTP password
           local-dir: reeni/dist/                   # Vite build output folder
-          server-dir: /public_html/                # cPanel root folder
+          server-dir: ${{ secrets.FTP_SERVER_DIR }} # e.g. /jrpolok.com/ or /public_html/
           dangerous-clean-slate: false             # true করলে পুরো folder মুছে নতুন করে deploy করবে
           exclude: |
             **/.git*
