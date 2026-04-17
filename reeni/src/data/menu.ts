@@ -1,4 +1,18 @@
-export const menuItems = [
+export interface SubMenuItem {
+  label: string;
+  href: string;
+  isLink?: boolean;
+}
+
+export interface MenuItem {
+  label: string;
+  href: string;
+  isLink: boolean;
+  hasDropdown?: boolean;
+  submenu?: SubMenuItem[];
+}
+
+export const menuItems: MenuItem[] = [
   { label: "Home", href: "#", isLink: false },
   { label: "Services", href: "#service", isLink: false },
   { label: "Resume", href: "#resume", isLink: false },
@@ -6,7 +20,7 @@ export const menuItems = [
   { label: "Blog", href: "#blog", isLink: false },
   { label: "Contact", href: "#contacts", isLink: false },
 ];
-export const menuItemsLight = [
+export const menuItemsLight: MenuItem[] = [
   { label: "Home", href: "#", isLink: false },
   { label: "Services", href: "#service", isLink: false },
   { label: "Resume", href: "#resume", isLink: false },
