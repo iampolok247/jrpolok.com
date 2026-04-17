@@ -115,7 +115,7 @@ export default function MobileMenu() {
                       display: activeParent == index ? "block" : "none",
                     }}
                   >
-                    {item.submenu.map((subItem, subIndex) => (
+                    {item.submenu?.map((subItem, subIndex) => (
                       <li key={subIndex}>
                         <Link
                           className={`${

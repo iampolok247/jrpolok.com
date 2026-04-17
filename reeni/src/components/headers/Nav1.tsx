@@ -42,7 +42,7 @@ export default function Nav1() {
 
             {item.hasDropdown && (
               <ul className="submenu">
-                {item.submenu.map((subItem, subIndex) => (
+                {item.submenu?.map((subItem, subIndex) => (
                   <li key={subIndex}>
                     <Link
                       className={`${
@@ -97,7 +97,7 @@ export default function Nav1() {
 
             {item.hasDropdown && (
               <ul className="submenu">
-                {item.submenu.map((subItem, subIndex) => (
+                {item.submenu?.map((subItem, subIndex) => (
                   <li key={subIndex}>
                     <Link
                       className={`${
