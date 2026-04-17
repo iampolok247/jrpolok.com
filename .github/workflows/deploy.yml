@@ -48,9 +48,11 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}        # e.g. ftp.jrpolok.com
           username: ${{ secrets.FTP_USERNAME }}    # cPanel FTP username
           password: ${{ secrets.FTP_PASSWORD }}    # cPanel FTP password
+          protocol: ftps                           # FTPS (port 990) — cPanel blocks plain FTP
+          port: 21
           local-dir: reeni/dist/                   # Vite build output folder
           server-dir: ${{ secrets.FTP_SERVER_DIR }} # e.g. /jrpolok.com/ or /public_html/
-          dangerous-clean-slate: false             # true করলে পুরো folder মুছে নতুন করে deploy করবে
+          dangerous-clean-slate: false
           exclude: |
             **/.git*
             **/.git*/**
