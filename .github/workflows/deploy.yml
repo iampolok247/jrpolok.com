@@ -1,0 +1,54 @@
+name: Deploy to cPanel (jrpolok.com)
+
+on:
+  push:
+    branches:
+      - main  # main branch-এ push হলেই auto deploy হবে
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    name: Build React App & Deploy via FTP
+
+    steps:
+      # ১. Code checkout
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      # ২. Node.js setup
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+          cache-dependency-path: reeni/package-lock.json
+
+      # ৩. Dependencies install
+      - name: Install Dependencies
+        working-directory: reeni
+        run: npm ci
+
+      # ৪. Production build
+      - name: Build Project
+        working-directory: reeni
+        run: npm run build
+        env:
+          # EmailJS environment variables (GitHub Secrets থেকে আসবে)
+          VITE_EMAILJS_SERVICE_ID: ${{ secrets.VITE_EMAILJS_SERVICE_ID }}
+          VITE_EMAILJS_TEMPLATE_ID: ${{ secrets.VITE_EMAILJS_TEMPLATE_ID }}
+          VITE_EMAILJS_PUBLIC_KEY: ${{ secrets.VITE_EMAILJS_PUBLIC_KEY }}
+
+      # ৫. FTP Deploy → cPanel public_html
+      - name: Deploy to cPanel via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}        # e.g. ftp.jrpolok.com
+          username: ${{ secrets.FTP_USERNAME }}    # cPanel FTP username
+          password: ${{ secrets.FTP_PASSWORD }}    # cPanel FTP password
+          local-dir: reeni/dist/                   # Vite build output folder
+          server-dir: /public_html/                # cPanel root folder
+          dangerous-clean-slate: false             # true করলে পুরো folder মুছে নতুন করে deploy করবে
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
