@@ -41,16 +41,18 @@ jobs:
           VITE_EMAILJS_TEMPLATE_ID: ${{ secrets.VITE_EMAILJS_TEMPLATE_ID }}
           VITE_EMAILJS_PUBLIC_KEY: ${{ secrets.VITE_EMAILJS_PUBLIC_KEY }}
 
-      # ৫. SFTP Deploy → cPanel via SSH (port 22)
-      - name: Deploy to cPanel via SFTP
-        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
-        with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          port: 22
-          local_path: reeni/dist/*
-          remote_path: ${{ secrets.FTP_SERVER_DIR }}
-          sftp_only: true
-          delete_remote_files: false
-            **/node_modules/**
+      # ৫. SSH key setup
+      - name: Setup SSH Key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -H ${{ secrets.FTP_SERVER }} >> ~/.ssh/known_hosts
+
+      # ৬. rsync দিয়ে deploy → cPanel
+      - name: Deploy via rsync over SSH
+        run: |
+          rsync -avz --delete \
+            -e "ssh -i ~/.ssh/id_rsa -p 22 -o StrictHostKeyChecking=no" \
+            reeni/dist/ \
+            ${{ secrets.FTP_USERNAME }}@${{ secrets.FTP_SERVER }}:${{ secrets.FTP_SERVER_DIR }}
