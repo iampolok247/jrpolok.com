@@ -53,8 +53,27 @@ jobs:
           mkdir -p ~/.ssh
           ssh-keyscan -H ${{ secrets.FTP_SERVER }} >> ~/.ssh/known_hosts
 
-      # ৭. shared hosting-friendly deploy via SSH + SCP
+      # ৭. Resolve writable remote web root
+      - name: Resolve Remote Deploy Directory
+        id: resolve_dir
+        run: |
+          TARGET_DIR=$(sshpass -p "${{ secrets.FTP_PASSWORD }}" ssh -p 22 -o StrictHostKeyChecking=no ${{ secrets.FTP_USERNAME }}@${{ secrets.FTP_SERVER }} '
+            for d in "$HOME/jrpolok.com" "$HOME/public_html" "jrpolok.com" "public_html"; do
+              if [ -d "$d" ] && [ -w "$d" ]; then
+                echo "$d"
+                exit 0
+              fi
+            done
+            exit 1
+          ')
+          if [ -z "$TARGET_DIR" ]; then
+            echo "No writable deploy directory found for this account."
+            exit 1
+          fi
+          echo "Using deploy directory: $TARGET_DIR"
+          echo "target_dir=$TARGET_DIR" >> "$GITHUB_OUTPUT"
+
+      # ৮. shared hosting-friendly deploy via SSH + SCP
       - name: Deploy via SCP over SSH
         run: |
-          # FTP_SERVER_DIR must already exist and be writable (e.g. ~/jrpolok.com/)
-          sshpass -p "${{ secrets.FTP_PASSWORD }}" scp -P 22 -o StrictHostKeyChecking=no -r reeni/dist/* ${{ secrets.FTP_USERNAME }}@${{ secrets.FTP_SERVER }}:${{ secrets.FTP_SERVER_DIR }}
+          sshpass -p "${{ secrets.FTP_PASSWORD }}" scp -P 22 -o StrictHostKeyChecking=no -r reeni/dist/* ${{ secrets.FTP_USERNAME }}@${{ secrets.FTP_SERVER }}:${{ steps.resolve_dir.outputs.target_dir }}/
