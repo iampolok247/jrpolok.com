@@ -415,7 +415,26 @@ export default function AdminPage() {
   const [activeTab, setActiveTab] = useState<Tab>("hero");
 
   useEffect(() => {
+    const previousTitle = document.title;
+    const previousRobots = document.querySelector('meta[name="robots"]')?.getAttribute("content");
+    document.title = "Admin | J R Polok";
+
+    let robotsMeta = document.querySelector('meta[name="robots"]');
+    if (!robotsMeta) {
+      robotsMeta = document.createElement("meta");
+      robotsMeta.setAttribute("name", "robots");
+      document.head.appendChild(robotsMeta);
+    }
+    robotsMeta.setAttribute("content", "noindex, nofollow, noarchive");
+
     if (sessionStorage.getItem("admin_auth") === "1") setAuthed(true);
+
+    return () => {
+      document.title = previousTitle;
+      if (previousRobots) {
+        robotsMeta?.setAttribute("content", previousRobots);
+      }
+    };
   }, []);
 
   const handleLogout = () => {
