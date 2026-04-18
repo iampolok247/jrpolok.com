@@ -56,5 +56,5 @@ jobs:
       # ৭. shared hosting-friendly deploy via SSH + SCP
       - name: Deploy via SCP over SSH
         run: |
-          sshpass -p "${{ secrets.FTP_PASSWORD }}" ssh -p 22 -o StrictHostKeyChecking=no ${{ secrets.FTP_USERNAME }}@${{ secrets.FTP_SERVER }} "mkdir -p '${{ secrets.FTP_SERVER_DIR }}'"
+          # FTP_SERVER_DIR must already exist and be writable (e.g. ~/jrpolok.com/)
           sshpass -p "${{ secrets.FTP_PASSWORD }}" scp -P 22 -o StrictHostKeyChecking=no -r reeni/dist/* ${{ secrets.FTP_USERNAME }}@${{ secrets.FTP_SERVER }}:${{ secrets.FTP_SERVER_DIR }}
