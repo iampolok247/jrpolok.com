@@ -1,7 +1,4 @@
-import { useModalUI } from "@/context/ModalUIContext";
-
 export default function DemoToggler() {
-  const { openModal } = useModalUI();
   return (
     <div className="demo-button-wrapper">
       <div className="buy-theme">
@@ -27,16 +24,6 @@ export default function DemoToggler() {
             </div>
           </div>
         </a>
-      </div>
-      <div
-        className="all-demo show-demo"
-        onClick={() => openModal("demoModal")}
-      >
-        <div className="demos">
-          <div className="theme-wrapper">
-            <div>44 Pre-built sites</div>
-          </div>
-        </div>
       </div>
     </div>
   );
