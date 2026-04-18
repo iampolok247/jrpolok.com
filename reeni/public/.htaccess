@@ -1,4 +1,14 @@
 Options -MultiViews
+AddDefaultCharset UTF-8
+
 RewriteEngine On
+
+# Enforce HTTPS and non-www canonical host.
+RewriteCond %{HTTPS} !=on [OR]
+RewriteCond %{HTTP_HOST} ^www\.jrpolok\.com$ [NC]
+RewriteRule ^ https://jrpolok.com%{REQUEST_URI} [R=301,L]
+
+# SPA fallback.
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^ index.html [QL]
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.html [L,QSA]
