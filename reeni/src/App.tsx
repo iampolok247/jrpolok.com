@@ -15,6 +15,12 @@ import { ModalUIProvider } from "./context/ModalUIContext";
 import { SiteDataProvider } from "./context/SiteDataContext";
 
 const AdminPage = lazy(() => import("./pages/admin"));
+const ServicesPage = lazy(() => import("./pages/services"));
+const ResumePage = lazy(() => import("./pages/resume"));
+const PortfolioPage = lazy(() => import("./pages/portfolio"));
+const BlogPage = lazy(() => import("./pages/blog"));
+const ContactPage = lazy(() => import("./pages/contact"));
+const FaqPage = lazy(() => import("./pages/faq"));
 
 function App() {
   return (
@@ -67,6 +73,12 @@ function App() {
             <ModalUIProvider>
               <Routes>
                 <Route path="/" element={<HomePage />} />
+                <Route path="/services" element={<ServicesPage />} />
+                <Route path="/resume" element={<ResumePage />} />
+                <Route path="/portfolio" element={<PortfolioPage />} />
+                <Route path="/blog" element={<BlogPage />} />
+                <Route path="/contact" element={<ContactPage />} />
+                <Route path="/faq" element={<FaqPage />} />
                 <Route path="/admin" element={<AdminPage />} />
               </Routes>
             </ModalUIProvider>

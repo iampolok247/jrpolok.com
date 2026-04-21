@@ -13,20 +13,22 @@ export interface MenuItem {
 }
 
 export const menuItems: MenuItem[] = [
-  { label: "Home", href: "#", isLink: false },
-  { label: "Services", href: "#service", isLink: false },
-  { label: "Resume", href: "#resume", isLink: false },
-  { label: "Portfolio", href: "#portfolio", isLink: false },
-  { label: "Blog", href: "#blog", isLink: false },
-  { label: "Contact", href: "#contacts", isLink: false },
+  { label: "Home", href: "/", isLink: true },
+  { label: "Services", href: "/services", isLink: true },
+  { label: "Resume", href: "/resume", isLink: true },
+  { label: "Portfolio", href: "/portfolio", isLink: true },
+  { label: "Blog", href: "/blog", isLink: true },
+  { label: "FAQ", href: "/faq", isLink: true },
+  { label: "Contact", href: "/contact", isLink: true },
 ];
 export const menuItemsLight: MenuItem[] = [
-  { label: "Home", href: "#", isLink: false },
-  { label: "Services", href: "#service", isLink: false },
-  { label: "Resume", href: "#resume", isLink: false },
-  { label: "Portfolio", href: "#portfolio", isLink: false },
-  { label: "Blog", href: "#blog", isLink: false },
-  { label: "Contact", href: "#contacts", isLink: false },
+  { label: "Home", href: "/", isLink: true },
+  { label: "Services", href: "/services", isLink: true },
+  { label: "Resume", href: "/resume", isLink: true },
+  { label: "Portfolio", href: "/portfolio", isLink: true },
+  { label: "Blog", href: "/blog", isLink: true },
+  { label: "FAQ", href: "/faq", isLink: true },
+  { label: "Contact", href: "/contact", isLink: true },
 ];
 export const demoData = [
   { href: "/", img: "/assets/images/demo/home-1.png", title: "Main Demo" },

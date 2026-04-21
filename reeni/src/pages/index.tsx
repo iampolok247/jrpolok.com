@@ -13,6 +13,7 @@ import Services2 from "@/components/common/Services3";
 import Skills from "@/components/common/Skills";
 import Skills2 from "@/components/common/Skills2";
 import Testimonials from "@/components/homes/home-1/Testimonials";
+import FaqSection from "@/components/common/FaqSection";
 
 import Awards from "@/components/common/Awards";
 import MetaComponent from "@/components/common/Metacomponent";
@@ -44,6 +45,7 @@ export default function HomePage() {
       <Testimonials />
       <Contact />
       <Blogs />
+      <FaqSection sectionClass="tmp-section-gap" />
       <Footer1 />
       <Copyright />
     </>
