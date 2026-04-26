@@ -1,5 +1,8 @@
 import PageShell from "./PageShell";
 import Blogs from "@/components/common/Blogs";
+import Services2 from "@/components/common/Services3";
+import FaqSection from "@/components/common/FaqSection";
+import Contact from "@/components/common/Contact2";
 
 const meta = {
   title: "Blog | J R Polok",
@@ -14,7 +17,10 @@ export default function BlogPage() {
   return (
     <PageShell meta={meta}>
       <div style={{ paddingTop: "140px" }}>
+        <Services2 />
         <Blogs parentClass="blog-and-news-are tmp-section-gapTop" />
+        <FaqSection sectionClass="tmp-section-gap" />
+        <Contact parentClass="get-in-touch-area tmp-section-gapTop" />
       </div>
     </PageShell>
   );

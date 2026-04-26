@@ -3,6 +3,8 @@ import Services from "@/components/common/Services";
 import Services2 from "@/components/common/Services3";
 import Facts from "@/components/common/Facts";
 import Skills from "@/components/common/Skills";
+import Education from "@/components/common/Education2";
+import Awards from "@/components/common/Awards";
 import FaqSection from "@/components/common/FaqSection";
 
 const meta = {
@@ -23,6 +25,8 @@ export default function ServicesPage() {
         <Facts />
         <Skills />
         <Services2 />
+        <Education />
+        <Awards />
         <FaqSection sectionClass="tmp-section-gap" />
       </div>
     </PageShell>

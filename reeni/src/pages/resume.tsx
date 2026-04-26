@@ -2,6 +2,10 @@ import PageShell from "./PageShell";
 import Education from "@/components/common/Education2";
 import Awards from "@/components/common/Awards";
 import Skills2 from "@/components/common/Skills2";
+import Facts from "@/components/common/Facts";
+import Portfolio from "@/components/common/Portfolio2";
+import Blogs from "@/components/common/Blogs";
+import FaqSection from "@/components/common/FaqSection";
 
 const meta = {
   title: "Resume | J R Polok",
@@ -17,9 +21,13 @@ export default function ResumePage() {
   return (
     <PageShell meta={meta}>
       <div style={{ paddingTop: "140px" }}>
+        <Facts />
         <Education />
         <Awards />
         <Skills2 />
+        <Portfolio />
+        <Blogs parentClass="blog-and-news-are tmp-section-gapTop" />
+        <FaqSection sectionClass="tmp-section-gap" />
       </div>
     </PageShell>
   );

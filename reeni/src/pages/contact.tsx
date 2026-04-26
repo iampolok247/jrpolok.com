@@ -1,5 +1,8 @@
 import PageShell from "./PageShell";
 import Contact from "@/components/common/Contact2";
+import Services from "@/components/common/Services";
+import Facts from "@/components/common/Facts";
+import Awards from "@/components/common/Awards";
 import FaqSection from "@/components/common/FaqSection";
 
 const meta = {
@@ -15,7 +18,10 @@ export default function ContactPage() {
   return (
     <PageShell meta={meta}>
       <div style={{ paddingTop: "140px" }}>
+        <Services />
+        <Facts />
         <Contact parentClass="get-in-touch-area tmp-section-gapTop" />
+        <Awards />
         <FaqSection sectionClass="tmp-section-gap" />
       </div>
     </PageShell>
