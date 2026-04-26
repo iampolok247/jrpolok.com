@@ -6,9 +6,9 @@ import Skills2 from "@/components/common/Skills2";
 const meta = {
   title: "Resume | J R Polok",
   description:
-    "View the resume of J R Polok including full stack engineering experience, awards, certifications, and technical strengths relevant for UK and Europe roles.",
+    "View the resume of J R Polok including work experience, education, awards, certifications and full-stack plus digital marketing strengths.",
   keywords:
-    "J R Polok resume, software engineer resume, full stack developer Bangladesh, UK Europe job application",
+    "J R Polok resume, digital marketing specialist resume, full stack developer Bangladesh, CRM developer resume",
   canonical: "https://jrpolok.com/resume",
   ogImage: "https://jrpolok.com/assets/images/jrpolok/J-R-Polok-2nd.png",
 };

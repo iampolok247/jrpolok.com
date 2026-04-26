@@ -8,9 +8,9 @@ import FaqSection from "@/components/common/FaqSection";
 const meta = {
   title: "Services | J R Polok",
   description:
-    "Explore software engineering, AI automation, SEO, and digital growth services by J R Polok for global businesses and UK/Europe-ready teams.",
+    "Explore full-stack development, CRM systems, SEO, paid ads, mobile app and digital growth services by J R Polok.",
   keywords:
-    "software engineering services, SEO services, AI automation, full stack developer, UK remote developer",
+    "full stack development services, CRM development, SEO services, paid ads management, mobile app developer",
   canonical: "https://jrpolok.com/services",
   ogImage: "https://jrpolok.com/assets/images/jrpolok/J-R-Polok-2nd.png",
 };

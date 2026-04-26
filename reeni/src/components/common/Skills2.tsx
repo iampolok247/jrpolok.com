@@ -18,64 +18,48 @@ export default function Skills2() {
                 <i className="fa-light fa-building-columns" />
               </div>
               <div className="card-title">
-                <h3 className="main-title">Full Stack Web Development</h3>
-                <p className="sub-title">JavaScript, PHP, Django, Laravel</p>
+                <h3 className="main-title">Full-Stack Web Development</h3>
+                <p className="sub-title">PHP, Laravel, React, Node.js, MongoDB</p>
               </div>
               <p className="card-para">
-                I architect and build secure, scalable applications with modern
-                frameworks, clean backend logic and business-focused execution.
+                I build business websites, CRM systems and custom web
+                applications with responsive UI, scalable backend logic and
+                production-ready deployment.
               </p>
-              <a href="#" className="read-more-btn">
-                Read More
-                <span className="read-more-icon">
-                  <i className="fa-solid fa-angle-right" />
-                </span>
-              </a>
             </div>
             <button className="service-link modal-popup" />
           </div>
           <div className="service-item tmp-scroll-trigger tmp-fade-in animation-order-2">
             <div className="my-skill-card">
               <div className="card-icon">
-                <i className="fa-light fa-calendar" />
+                <i className="fa-light fa-bullhorn" />
               </div>
               <div className="card-title">
-                <h3 className="main-title">AI Automation & Agent Systems</h3>
-                <p className="sub-title">Code + No-Code Workflows</p>
+                <h3 className="main-title">Digital Marketing Execution</h3>
+                <p className="sub-title">SEO, Meta Ads, Content, Social Media</p>
               </div>
               <p className="card-para">
-                I develop intelligent workflows using prompt engineering,
-                generative AI and decision support to automate repetitive tasks
-                and boost productivity.
+                I run growth-focused campaigns that combine SEO, paid ads,
+                content publishing and social media management to generate
+                leads and improve ROI.
               </p>
-              <a href="#" className="read-more-btn">
-                Read More
-                <span className="read-more-icon">
-                  <i className="fa-solid fa-angle-right" />
-                </span>
-              </a>
             </div>
             <button className="service-link modal-popup" />
           </div>
           <div className="service-item tmp-scroll-trigger tmp-fade-in animation-order-3">
             <div className="my-skill-card">
               <div className="card-icon">
-                <i className="fa-light fa-pen-nib" />
+                <i className="fa-light fa-mobile-screen-button" />
               </div>
               <div className="card-title">
-                <h3 className="main-title">Digital Marketing Execution</h3>
-                <p className="sub-title">SEO, Paid Ads, Social Growth</p>
+                <h3 className="main-title">Mobile, CRM & Automation</h3>
+                <p className="sub-title">Flutter, Android, Lead Management Systems</p>
               </div>
               <p className="card-para">
-                I create and execute data-driven campaigns that improve online
-                visibility, engagement and sustainable business growth.
+                I work across Flutter-based app development, Android delivery,
+                office CRM systems and workflow automation to streamline
+                operations and support business growth.
               </p>
-              <a href="#" className="read-more-btn">
-                Read More
-                <span className="read-more-icon">
-                  <i className="fa-solid fa-angle-right" />
-                </span>
-              </a>
             </div>
             <button className="service-link modal-popup" />
           </div>

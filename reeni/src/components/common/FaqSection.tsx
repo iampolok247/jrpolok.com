@@ -7,29 +7,29 @@ interface FaqItem {
 
 const faqItems: FaqItem[] = [
   {
-    question: "Are you open to remote opportunities in the UK and Europe?",
+    question: "What kind of roles and projects do you work on?",
     answer:
-      "Yes. I actively apply for remote and relocation-friendly roles across the UK and Europe in full stack engineering, SEO strategy, and AI automation.",
+      "I work across full-stack web development, CRM systems, digital marketing execution, lead generation funnels, mobile app delivery and business website projects.",
   },
   {
     question: "What tech stack do you use most often?",
     answer:
-      "My core stack includes React, TypeScript, Laravel, Django, Node ecosystem tooling, and modern SEO-first front-end architecture for high-performance delivery.",
+      "My common stack includes PHP, Laravel, React, Node.js, MongoDB, JavaScript, WordPress and Flutter, depending on the business requirements.",
   },
   {
     question: "Do you provide both development and digital growth services?",
     answer:
-      "Yes. I combine software engineering with technical SEO, performance optimization, paid media strategy, and conversion-focused implementation.",
+      "Yes. I combine development work with SEO, Meta Ads, content planning, social media management and conversion-focused landing page execution.",
   },
   {
     question: "Can you help with existing product optimization?",
     answer:
-      "Absolutely. I work on code quality, speed, security hardening, crawlability fixes, and measurable growth improvements for existing web products.",
+      "Absolutely. I help improve website performance, SEO structure, campaign efficiency, CRM workflows and the overall usability of existing digital products.",
   },
   {
     question: "How can I contact you for projects or job opportunities?",
     answer:
-      "Use the contact form on this website or connect through LinkedIn and email. I usually respond quickly to serious collaboration requests.",
+      "Use the contact form on this website or connect through LinkedIn, GitHub, WhatsApp or email. I usually respond quickly to serious collaboration requests.",
   },
 ];
 
@@ -81,8 +81,8 @@ export default function FaqSection({
             Frequently Asked Questions
           </h2>
           <p className="description section-sm tmp-scroll-trigger tmp-fade-in animation-order-3">
-            Common questions about my work process, technology stack, and
-            opportunities across UK and Europe.
+            Common questions about my work process, technical stack, service
+            areas and project collaboration.
           </p>
         </div>
 

@@ -45,7 +45,7 @@ export const blogData2 = [
     altText: "Blog Thumbnail",
     author: "J R Polok",
     date: "April 2026",
-    title: "How Full Stack Engineering Drives Sustainable Digital Growth",
+    title: "How Custom CRM Systems Improve Lead Management and Team Efficiency",
     tags: [
       "All Project",
       "Graphics",
@@ -57,8 +57,8 @@ export const blogData2 = [
     ],
     categories: ["UI/UX Design Innovation"],
     description:
-      "Aliquam eros justo, posuere loborti viverra lao ullamcorper posuere viverra .Aliquam eros justo, posuere Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper",
-    slug: "how-full-stack-engineering-drives-sustainable-digital-growth",
+      "A practical breakdown of how custom CRM systems reduce manual work, centralize lead tracking and help service organizations scale operations.",
+    slug: "how-custom-crm-systems-improve-lead-management-and-team-efficiency",
   },
   {
     id: 2,
@@ -67,12 +67,12 @@ export const blogData2 = [
     altText: "Blog Thumbnail",
     author: "J R Polok",
     date: "April 2026",
-    title: "Practical AI Automation for Teams and Small Businesses",
+    title: "SEO, Paid Ads and Social Media: Building a Better Lead Generation Funnel",
     tags: ["CV", "Starts", "Start shape"],
     categories: ["Business Solution"],
     description:
-      "Aliquam eros justo, posuere loborti viverra lao ullamcorper posuere viverra .Aliquam eros justo, posuere Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper",
-    slug: "practical-ai-automation-for-teams-and-small-businesses",
+      "A field-tested approach to combining SEO, Meta Ads and social content to generate leads at sustainable cost and stronger conversion quality.",
+    slug: "seo-paid-ads-and-social-media-building-a-better-lead-generation-funnel",
   },
   {
     id: 3,
@@ -81,12 +81,12 @@ export const blogData2 = [
     altText: "Blog Thumbnail",
     author: "J R Polok",
     date: "April 2026",
-    title: "Combining SEO, Paid Ads and Content for Better ROI",
+    title: "What Makes a High-Converting Business Website Effective",
     tags: ["All Project", "Resume", "CV Card", "Start shape"],
     categories: ["Business Solution"],
     description:
-      "Aliquam eros justo, posuere loborti viverra lao ullamcorper posuere viverra .Aliquam eros justo, posuere Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper",
-    slug: "combining-seo-paid-ads-and-content-for-better-roi",
+      "The core structure, UX and technical decisions behind websites that support branding, trust, speed and real conversion outcomes.",
+    slug: "what-makes-a-high-converting-business-website-effective",
   },
 ];
 

@@ -57,15 +57,15 @@ export interface SiteData {
 const defaultSiteData: SiteData = {
   hero: {
     name: "J R Polok",
-    subtitle: "Best Software Engineer & SEO Expert in Bangladesh",
+    subtitle: "Digital Marketing Specialist and Full-Stack Developer",
     description:
-      "Recognized as one of the best software engineers and best web developers in Bangladesh — I build scalable web applications, intelligent AI-driven systems and data-driven digital marketing strategies. National Award-Winning professional and top SEO expert based in Bangladesh.",
+      "Digital Marketing Specialist and Full-Stack Developer with 10+ years of experience across SEO, paid advertising, social media marketing, CRM systems, automation solutions and high-converting web development.",
     roles: [
-      "Full Stack Software Engineer.",
-      "AI Automation Specialist.",
-      "Digital Marketing Executive.",
-      "Cyber Security Enthusiast.",
-      "Technology Instructor.",
+      "Full-Stack Developer.",
+      "Digital Marketing Specialist.",
+      "CRM & Automation Builder.",
+      "Flutter App Developer.",
+      "SEO & Lead Generation Strategist.",
     ],
     heroImage: "/assets/images/jrpolok/J-R-Polok%20-Hero.png",
   },
@@ -74,7 +74,7 @@ const defaultSiteData: SiteData = {
   awards: awardsData,
 };
 
-const STORAGE_KEY = "jrpolok_site_data";
+const STORAGE_KEY = "jrpolok_site_data_v2";
 
 // ─── Context ──────────────────────────────────────────────────────────────────
 

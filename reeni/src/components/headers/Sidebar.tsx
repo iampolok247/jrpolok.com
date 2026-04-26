@@ -51,19 +51,19 @@ export default function Sidebar() {
               </a>
             </div>
             <h5 className="title mt--30">
-              National Award-Winning Full Stack Engineer, AI Automation Specialist and Digital Marketing Executive.
+              Digital Marketing Specialist and Full-Stack Developer with 10+ years of practical experience.
             </h5>
             <p className="disc">
-              I help businesses build complete digital ecosystems through
-              scalable web development, AI-driven automation, cyber-security
-              aware implementation and growth-focused marketing strategy.
+              I help businesses improve operations and growth through web
+              development, CRM systems, lead generation funnels, digital
+              marketing execution and custom automation solutions.
             </p>
             <div className="short-contact-area">
               {/* single contact information */}
               <div className="single-contact">
                 <i className="fa-solid fa-phone" />
                 <div className="information tmp-link-animation">
-                  <span>Professional Focus</span>
+                  <span>Phone</span>
                   <a href="tel:+8801410573107" className="number">
                     +8801410573107
                   </a>
@@ -85,8 +85,8 @@ export default function Sidebar() {
               <div className="single-contact">
                 <i className="fa-solid fa-location-crosshairs" />
                 <div className="information tmp-link-animation">
-                  <span>Current Role</span>
-                  <span className="number">Prime Academy Bangladesh</span>
+                  <span>Location</span>
+                  <span className="number">Meherpur, Khulna, Bangladesh</span>
                 </div>
               </div>
               {/* single contact information end */}
@@ -95,16 +95,16 @@ export default function Sidebar() {
             <div className="social-wrapper mt--20">
               <span className="subtitle">find with me</span>
               <div className="social-link">
-                <a href="https://www.facebook.com/jrpolok" target="_blank" rel="noreferrer">
-                  <i className="fa-brands fa-instagram" />
+                <a href="https://github.com/iampolok247" target="_blank" rel="noreferrer">
+                  <i className="fa-brands fa-github" />
                 </a>
                 <a href="https://bd.linkedin.com/in/engnrpolok" target="_blank" rel="noreferrer">
                   <i className="fa-brands fa-linkedin-in" />
                 </a>
-                <a href="https://www.facebook.com/jrpolok" target="_blank" rel="noreferrer">
-                  <i className="fa-brands fa-twitter" />
+                <a href="https://wa.me/8801410573107" target="_blank" rel="noreferrer">
+                  <i className="fa-brands fa-whatsapp" />
                 </a>
-                <a href="https://www.facebook.com/jrpolok" target="_blank" rel="noreferrer">
+                <a href="https://www.facebook.com/primeacademy.org" target="_blank" rel="noreferrer">
                   <i className="fa-brands fa-facebook-f" />
                 </a>
               </div>

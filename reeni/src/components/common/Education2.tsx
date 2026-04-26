@@ -1,4 +1,43 @@
 import { educationExperienceData } from "@/data/education";
+
+const experienceHighlights = [
+  {
+    label: "2015 - 2019",
+    company: "Niloy IT Farm",
+    title: "Digital Marketing Specialist",
+    description:
+      "Generated B2B leads through web research and targeted outreach while maintaining lead databases and sales support workflows.",
+  },
+  {
+    label: "2020 - 2021",
+    company: "Quality Coders Inc.",
+    title: "Frontend Developer",
+    description:
+      "Developed responsive user interfaces, optimized website performance and collaborated closely with backend teams on product delivery.",
+  },
+  {
+    label: "2021 - 2023",
+    company: "Global Technologies Enterprises",
+    title: "Digital Marketing Strategist & Android Developer",
+    description:
+      "Managed Android app publishing, paid campaigns, social content and SEO/ASO activities to support audience growth and visibility.",
+  },
+  {
+    label: "2023 - 2024",
+    company: "CodersFly",
+    title: "Chief Technology Officer & Co-Founder",
+    description:
+      "Led technology strategy, product delivery and team allocation while building scalable web applications and automation systems.",
+  },
+  {
+    label: "2025 - Present",
+    company: "Prime Academy Bangladesh",
+    title: "Digital Marketing Specialist",
+    description:
+      "Managing SEO, paid ads, social media, CRM operations and high-converting lead generation landing pages for the organization.",
+  },
+];
+
 export default function Education() {
   return (
     <section className="education-experience tmp-section-gapTop" id="resume">
@@ -12,9 +51,9 @@ export default function Education() {
             Technology & Strategy
           </h2>
           <p className="description section-sm tmp-scroll-trigger tmp-fade-in animation-order-3">
-            My journey spans software engineering, AI automation, cyber
-            security and digital marketing, helping organizations grow through
-            secure and scalable digital systems.
+            My background combines software development, digital marketing,
+            CRM operations and product execution across agency, startup and
+            education-driven organizations.
           </p>
         </div>
         <h2 className="custom-title mb-32 tmp-scroll-trigger tmp-fade-in animation-order-1">
@@ -58,26 +97,17 @@ export default function Education() {
                     />
                   </span>
                 </h2>
-                <div className="experience-content tmp-scroll-trigger tmp-fade-in animation-order-1">
-                  <p className="ex-subtitle">experience</p>
-                  <h2 className="ex-name">Prime Academy Bangladesh</h2>
-                  <h3 className="ex-title">Digital Marketing Executive</h3>
-                  <p className="ex-para">
-                    Leading SEO, content marketing, social media and paid
-                    campaign execution with a strong focus on measurable reach,
-                    engagement and conversion growth.
-                  </p>
-                </div>
-                <div className="experience-content tmp-scroll-trigger tmp-fade-in animation-order-2">
-                  <p className="ex-subtitle">experience</p>
-                  <h2 className="ex-name">Codersfy & Freelance Projects</h2>
-                  <h3 className="ex-title">CTO / Full Stack & Android Developer</h3>
-                  <p className="ex-para">
-                    Worked across leadership and engineering roles, delivering
-                    web, backend and mobile solutions while mentoring teams and
-                    turning ideas into production-ready products.
-                  </p>
-                </div>
+                {experienceHighlights.map((item, index) => (
+                  <div
+                    className={`experience-content tmp-scroll-trigger tmp-fade-in animation-order-${index + 1}`}
+                    key={item.company}
+                  >
+                    <p className="ex-subtitle">{item.label}</p>
+                    <h2 className="ex-name">{item.company}</h2>
+                    <h3 className="ex-title">{item.title}</h3>
+                    <p className="ex-para">{item.description}</p>
+                  </div>
+                ))}
               </div>
             </div>
             <div className="col-lg-6">

@@ -12,42 +12,52 @@ export interface Award {
 export const awardsData: Award[] = [
   {
     id: 1,
-    title: "National Award – Best Innovative Software",
-    issuer: "Digital Innovation Fair, Bangladesh",
+    title: "National Digital Innovation Award - 1st Place",
+    issuer: "Bangladesh Government",
     year: "2022",
     category: "award",
     description:
-      "Recognized nationally for developing impactful real-world software solutions at the Digital Innovation Fair 2022, hosted by ICT Division, Bangladesh.",
+      "Recognized nationally for developing a mobile application supporting birth and death registration services and government service access.",
     icon: "fa-solid fa-trophy",
   },
   {
     id: 2,
-    title: "LEDP Certified Instructor",
-    issuer: "ICT Division, Government of Bangladesh",
-    year: "2021",
+    title: "Cyber Security & Ethical Hacking Career Track",
+    issuer: "Ostad",
+    year: "2026",
     category: "certificate",
     description:
-      "Certified as an official instructor under the Learning and Earning Development Project (LEDP) by the ICT Division of Bangladesh.",
+      "Completed practical cybersecurity training covering ethical hacking, network security, vulnerability assessment and Kali Linux tool usage.",
     icon: "fa-solid fa-certificate",
   },
   {
     id: 3,
-    title: "Full Stack Web Development",
-    issuer: "University of the People, California",
-    year: "2020",
+    title: "Career Essentials in Generative AI",
+    issuer: "Microsoft & LinkedIn",
+    year: "2023",
     category: "certificate",
     description:
-      "Completed advanced coursework in full stack web development covering frontend, backend and database systems.",
+      "Completed professional training in generative AI concepts, tools and practical business applications.",
     icon: "fa-solid fa-medal",
   },
   {
     id: 4,
-    title: "Digital Marketing Mastery",
-    issuer: "Google & Meta (Coursera)",
+    title: "Chief Technology Officer Career Guide",
+    issuer: "LinkedIn",
     year: "2023",
     category: "certificate",
     description:
-      "Certified in digital marketing strategy covering SEO, Paid Ads, Social Media Marketing and Analytics.",
+      "Completed leadership-focused learning around technical decision-making, product direction and engineering team management.",
     icon: "fa-solid fa-award",
+  },
+  {
+    id: 5,
+    title: "Certificate of Appreciation",
+    issuer: "Prime Academy Bangladesh",
+    year: "2025",
+    category: "certificate",
+    description:
+      "Recognized for developing a customized software system that improved operational efficiency and technology-driven delivery.",
+    icon: "fa-solid fa-medal",
   },
 ];

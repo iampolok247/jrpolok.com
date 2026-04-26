@@ -19,11 +19,11 @@ import Awards from "@/components/common/Awards";
 import MetaComponent from "@/components/common/Metacomponent";
 
 const metadata = {
-  title: "J R Polok | Best Software Engineer, Web Developer, SEO Expert & Digital Marketer in Bangladesh",
+  title: "J R Polok | Digital Marketing Specialist and Full-Stack Developer",
   description:
-    "J R Polok is the Best Software Engineer, Best Web Developer, Top SEO Expert and Best Digital Marketer in Bangladesh. National Award-Winning Full Stack Engineer, AI Automation Specialist & Digital Marketing Executive. Expert in Laravel, Django, React, SEO, Paid Ads, and Cybersecurity.",
+    "J R Polok is a Digital Marketing Specialist and Full-Stack Developer with 10+ years of experience in SEO, paid ads, CRM systems, automation solutions, web development and lead generation.",
   keywords:
-    "Best Software Engineer in Bangladesh, Best Web Developer in Bangladesh, Best Digital Marketer in Bangladesh, SEO Expert in Bangladesh, J R Polok, Full Stack Developer Bangladesh, AI Automation Specialist Bangladesh, Digital Marketing Executive Bangladesh, Laravel Developer Bangladesh, React Developer Bangladesh, Web Development Bangladesh, SEO Bangladesh, Cyber Security Bangladesh",
+    "J R Polok, Digital Marketing Specialist Bangladesh, Full Stack Developer Bangladesh, CRM Developer Bangladesh, SEO Specialist Bangladesh, Laravel Developer Bangladesh, React Developer Bangladesh, Lead Generation Expert Bangladesh, Web Developer Bangladesh",
   canonical: "https://jrpolok.com/",
   ogImage: "https://jrpolok.com/assets/images/jrpolok/J-R-Polok-2nd.png",
 };

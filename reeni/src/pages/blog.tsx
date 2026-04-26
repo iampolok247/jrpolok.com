@@ -4,8 +4,8 @@ import Blogs from "@/components/common/Blogs";
 const meta = {
   title: "Blog | J R Polok",
   description:
-    "Read practical articles on software engineering, SEO, AI automation, cybersecurity, and digital strategy by J R Polok.",
-  keywords: "software engineering blog, SEO blog, AI automation blog, cybersecurity insights",
+    "Read practical articles on CRM systems, web development, SEO, paid ads, conversion strategy and digital growth by J R Polok.",
+  keywords: "CRM blog, web development blog, SEO blog, paid ads strategy, digital marketing insights",
   canonical: "https://jrpolok.com/blog",
   ogImage: "https://jrpolok.com/assets/images/jrpolok/J-R-Polok-2nd.png",
 };

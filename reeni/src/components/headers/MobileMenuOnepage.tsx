@@ -66,16 +66,16 @@ export default function MobileMenuOnepage() {
           <div className="social-wrapper mt--40">
             <span className="subtitle">find with me</span>
             <div className="social-link">
-              <a href="https://www.facebook.com/jrpolok" target="_blank" rel="noreferrer">
-                <i className="fa-brands fa-instagram" />
+              <a href="https://github.com/iampolok247" target="_blank" rel="noreferrer">
+                <i className="fa-brands fa-github" />
               </a>
               <a href="https://bd.linkedin.com/in/engnrpolok" target="_blank" rel="noreferrer">
                 <i className="fa-brands fa-linkedin-in" />
               </a>
-              <a href="https://www.facebook.com/jrpolok" target="_blank" rel="noreferrer">
-                <i className="fa-brands fa-twitter" />
+              <a href="https://wa.me/8801410573107" target="_blank" rel="noreferrer">
+                <i className="fa-brands fa-whatsapp" />
               </a>
-              <a href="https://www.facebook.com/jrpolok" target="_blank" rel="noreferrer">
+              <a href="https://www.facebook.com/primeacademy.org" target="_blank" rel="noreferrer">
                 <i className="fa-brands fa-facebook-f" />
               </a>
             </div>

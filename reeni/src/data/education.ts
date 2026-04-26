@@ -1,30 +1,30 @@
 export const educationExperienceData = [
   {
-    role: "B.Sc. in Computer Science & Engineering",
-    duration: "European University of Bangladesh (Ongoing)",
+    role: "BSc in Computer Science Engineering",
+    duration: "European University of Bangladesh (2023 - Present)",
     description:
-      "Currently pursuing undergraduate studies in CSE with focus on software engineering, AI systems and modern web development.",
+      "Currently pursuing a degree in Computer Science Engineering with continued focus on software engineering, web development and applied technology.",
     animationOrder: 1,
   },
   {
-    role: "Computer Science Studies",
-    duration: "University of the People, California",
+    role: "Diploma in Computer Engineering",
+    duration: "Magura Govt Polytechnic Institute (2016 - 2020)",
     description:
-      "Completed foundational coursework to strengthen practical knowledge in programming, systems and digital technology.",
+      "Completed diploma studies in computer engineering, building a practical base in programming, systems and technical problem solving.",
     animationOrder: 2,
   },
   {
-    role: "LEDP Instructor (ICT Division)",
-    duration: "Learning and Earning Development Project",
+    role: "Intern at Full Stack Development",
+    duration: "PeopleNTech (2020 - 2021)",
     description:
-      "Trained students in computer applications and digital skills to improve employability and practical industry readiness.",
+      "Completed internship training in full stack development with hands-on exposure to frontend, backend and project workflow fundamentals.",
     animationOrder: 3,
   },
   {
-    role: "National Award Winner",
-    duration: "Digital Innovation Fair 2022",
+    role: "National Digital Innovation Award - 1st Place",
+    duration: "Bangladesh Government (2022)",
     description:
-      "Recognized for Best Innovative Software Development for building impactful, real-world software solutions.",
+      "Awarded for building a public-service-focused birth and death registration application with real-world administrative impact.",
     animationOrder: 4,
   },
 ];

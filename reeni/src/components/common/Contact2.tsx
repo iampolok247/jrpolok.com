@@ -71,12 +71,12 @@ export default function Contact({
                     <span className="subtitle">GET IN TOUCH</span>
                   </div>
                   <h2 className="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2">
-                    Let’s Build a Smarter Digital Solution
+                    Let’s Work on Your Next Website, CRM or Growth Project
                   </h2>
                   <p className="description tmp-scroll-trigger tmp-fade-in animation-order-3">
-                    I’m open to opportunities in full stack development, AI
-                    automation, digital transformation and strategic technology
-                    consulting.
+                    I’m available for full-stack development, CRM systems,
+                    SEO, paid ads, social media growth and conversion-focused
+                    business websites.
                   </p>
                 </div>
               </div>

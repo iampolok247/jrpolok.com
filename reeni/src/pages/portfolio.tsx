@@ -5,9 +5,9 @@ import Brands from "@/components/common/Brands";
 const meta = {
   title: "Portfolio | J R Polok",
   description:
-    "Browse selected projects by J R Polok across web development, AI automation, and digital growth implementation.",
+    "Browse selected projects by J R Polok across LMS platforms, CRM systems, company websites, recruitment products and growth-driven delivery.",
   keywords:
-    "portfolio, web development projects, AI automation projects, SEO case studies",
+    "portfolio, CRM projects, LMS projects, web development projects, recruitment platform projects",
   canonical: "https://jrpolok.com/portfolio",
   ogImage: "https://jrpolok.com/assets/images/jrpolok/J-R-Polok-2nd.png",
 };

@@ -4,29 +4,29 @@ export const services = [
   {
     id: 1,
     icon: "fa-light fa-code",
-    title: "Full Stack Development",
-    projects: "Web Apps & Platforms",
+    title: "Full-Stack Development",
+    projects: "Web Apps, CMS and Platforms",
     animationOrder: "1",
   },
   {
     id: 2,
-    icon: "fa-light fa-robot",
-    title: "AI Automation Systems",
-    projects: "Agents & Workflows",
+    icon: "fa-light fa-bullhorn",
+    title: "Digital Marketing",
+    projects: "SEO, Ads and Social Growth",
     animationOrder: "2",
   },
   {
     id: 3,
-    icon: "fa-light fa-shield-check",
-    title: "Cyber Security & VAPT",
-    projects: "Secure Digital Solutions",
+    icon: "fa-light fa-mobile-screen-button",
+    title: "Android & Flutter Apps",
+    projects: "Mobile App Delivery",
     animationOrder: "3",
   },
   {
     id: 4,
-    icon: "fa-light fa-bullhorn",
-    title: "Digital Marketing Strategy",
-    projects: "SEO, Ads & Social Growth",
+    icon: "fa-light fa-diagram-project",
+    title: "CRM & Automation",
+    projects: "Lead Systems and Workflow Tools",
     animationOrder: "4",
   },
 ].map((elm) => {
@@ -215,19 +215,19 @@ export const serviceCards = [
 
 export const services5 = [
   {
-    title: "AI Agent Development",
+    title: "Full-Stack Web Development",
     description:
-      "I build intelligent systems with code and no-code platforms to automate repetitive work and improve operational efficiency.",
+      "I build web applications, business websites and backend systems using PHP, Laravel, JavaScript, React, Node.js and MongoDB.",
   },
   {
-    title: "Full Stack Engineering",
+    title: "Digital Marketing & Lead Generation",
     description:
-      "I develop scalable web applications using JavaScript, PHP, Django, Laravel and MySQL with a focus on performance and reliability.",
+      "I manage SEO, paid ads, content and social media execution to improve visibility, lead quality and campaign ROI.",
   },
   {
-    title: "Growth-Focused Marketing",
+    title: "CRM, Automation & Product Delivery",
     description:
-      "I plan and execute SEO, content, paid advertising and social campaigns that improve visibility, engagement and measurable growth.",
+      "I design custom CRM systems, automate operational workflows and manage projects from planning through deployment.",
   },
 ];
 export const serviceCards2 = [
