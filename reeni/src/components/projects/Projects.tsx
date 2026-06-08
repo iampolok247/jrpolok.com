@@ -22,9 +22,12 @@ export default function Projects({ isLight = false }) {
                     {/* Static img box classes */}
                     {/* Link wrapper around images - href is static */}
                     <Link
-                      to={`/project-details${isLight ? "-white" : ""}/${
-                        item.slug
-                      }`}
+                      to={
+                        item.projectUrl ??
+                        `/project-details${isLight ? "-white" : ""}/${item.slug}`
+                      }
+                      target={item.projectUrl ? "_blank" : undefined}
+                      rel={item.projectUrl ? "noopener noreferrer" : undefined}
                     >
                       {/* Image Primary - dynamic src, alt, width, height */}
                       <img
@@ -49,9 +52,12 @@ export default function Projects({ isLight = false }) {
                   {/* Icon Link after img-box - static href, classes, icon */}
                   {/* Included for all items, matching examples 2-4 */}
                   <Link
-                    to={`/project-details${isLight ? "-white" : ""}/${
-                      item.slug
-                    }`}
+                    to={
+                      item.projectUrl ??
+                      `/project-details${isLight ? "-white" : ""}/${item.slug}`
+                    }
+                    target={item.projectUrl ? "_blank" : undefined}
+                    rel={item.projectUrl ? "noopener noreferrer" : undefined}
                     className="img-link-icon"
                   >
                     <i className="fa-solid fa-arrow-up-long" />
@@ -69,9 +75,12 @@ export default function Projects({ isLight = false }) {
                       {/* Title Link - static classes & href, dynamic text */}
                       <Link
                         className="link"
-                        to={`/project-details${isLight ? "-white" : ""}/${
-                          item.slug
-                        }`}
+                        to={
+                          item.projectUrl ??
+                          `/project-details${isLight ? "-white" : ""}/${item.slug}`
+                        }
+                        target={item.projectUrl ? "_blank" : undefined}
+                        rel={item.projectUrl ? "noopener noreferrer" : undefined}
                       >
                         {item.title} {/* Dynamic title text from data */}
                       </Link>

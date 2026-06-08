@@ -35,6 +35,7 @@ export interface PortfolioItem {
   title: string;
   description: string;
   slug: string;
+  projectUrl?: string;
 }
 
 export interface HeroData {

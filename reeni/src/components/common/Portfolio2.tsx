@@ -19,8 +19,8 @@ export default function Portfolio({ isLight = false }) {
             Development, AI & Marketing
           </h2>
           <p className="description section-sm tmp-scroll-trigger tmp-fade-in animation-order-3">
-            These showcase placeholders represent software, automation and
-            growth-focused projects delivered with practical business impact.
+            Live products and business websites delivered for recruitment,
+            education, healthcare and service-focused brands.
           </p>
         </div>
         <div className="row">
@@ -33,14 +33,17 @@ export default function Portfolio({ isLight = false }) {
                   <div className="img-box v2">
                     <Link
                       className="tmp-scroll-trigger tmp-zoom-in animation-order-1"
-                      to={`/project-details${isLight ? "-white" : ""}/${
-                        item.slug
-                      }`}
+                      to={
+                        item.projectUrl ??
+                        `/project-details${isLight ? "-white" : ""}/${item.slug}`
+                      }
+                      target={item.projectUrl ? "_blank" : undefined}
+                      rel={item.projectUrl ? "noopener noreferrer" : undefined}
                     >
                       <img
                         loading="lazy"
                         className="w-100"
-                        alt="Thumbnail"
+                        alt={item.title}
                         src={item.imageSrc}
                         width={item.width}
                         height={item.height}
@@ -53,9 +56,12 @@ export default function Portfolio({ isLight = false }) {
                     <h3 className="portfolio-card-title">
                       <Link
                         className="link"
-                        to={`/project-details${isLight ? "-white" : ""}/${
-                          item.slug
-                        }`}
+                        to={
+                          item.projectUrl ??
+                          `/project-details${isLight ? "-white" : ""}/${item.slug}`
+                        }
+                        target={item.projectUrl ? "_blank" : undefined}
+                        rel={item.projectUrl ? "noopener noreferrer" : undefined}
                       >
                         {item.title}
                       </Link>
@@ -63,9 +69,12 @@ export default function Portfolio({ isLight = false }) {
                     <p className="portfoli-card-para">{item.description}</p>
                   </div>
                   <Link
-                    to={`/project-details${isLight ? "-white" : ""}/${
-                      item.slug
-                    }`}
+                    to={
+                      item.projectUrl ??
+                      `/project-details${isLight ? "-white" : ""}/${item.slug}`
+                    }
+                    target={item.projectUrl ? "_blank" : undefined}
+                    rel={item.projectUrl ? "noopener noreferrer" : undefined}
                     className="tmp-arrow-icon-btn"
                   >
                     <div className="btn-inner">
