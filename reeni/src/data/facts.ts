@@ -1,8 +1,14 @@
+export const heroCounter = {
+  count: 5,
+  suffix: "+",
+  title: "Years of Professional Experience",
+};
+
 export const counters = [
-  { count: 1, suffix: "", text: "National Award", order: 1 },
-  { count: 3, suffix: "+", text: "Core Domains (Dev, AI, Marketing)", order: 2 },
-  { count: 6, suffix: "+", text: "Major Tech Stacks", order: 3 },
-  { count: 100, suffix: "%", text: "Focus on Impactful Solutions", order: 4 },
+  { count: 4, suffix: "+", text: "Core Expertise Areas", order: 1 },
+  { isText: true, value: "UK", text: "International Work Experience", order: 2 },
+  { count: 100, suffix: "+", text: "Digital Campaigns & Projects", order: 3 },
+  { isText: true, value: "AI", text: "Automation & Agent Solutions", order: 4 },
 ];
 
 export const countData = [

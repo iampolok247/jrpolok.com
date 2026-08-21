@@ -8,13 +8,11 @@ export default function Services3() {
             <span className="subtitle">Core Expertise</span>
           </div>
           <h2 className="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2">
-            Building Complete Digital <br />
-            Ecosystems
+            What I Do
           </h2>
           <p className="description section-sm tmp-scroll-trigger tmp-fade-in animation-order-3">
-            I combine software engineering, AI automation and digital marketing
-            to design systems that are technically strong, growth-focused and
-            ready for real-world execution.
+            Four pillars that cover how I help businesses grow, automate,
+            build and create.
           </p>
         </div>
         <div className="row">

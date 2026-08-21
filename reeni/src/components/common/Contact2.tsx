@@ -71,12 +71,69 @@ export default function Contact({
                     <span className="subtitle">GET IN TOUCH</span>
                   </div>
                   <h2 className="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2">
-                    Let’s Work on Your Next Website, CRM or Growth Project
+                    Let’s Build Smarter Growth Systems
                   </h2>
                   <p className="description tmp-scroll-trigger tmp-fade-in animation-order-3">
-                    I’m available for full-stack development, CRM systems,
-                    SEO, paid ads, social media growth and conversion-focused
-                    business websites.
+                    Looking for someone who can combine digital marketing,
+                    SEO, AI automation and technology? Let’s discuss how I can
+                    contribute to your next project or team.
+                  </p>
+                  <div
+                    className="tmp-scroll-trigger tmp-fade-in animation-order-4"
+                    style={{ display: "flex", flexWrap: "wrap", gap: "16px", marginTop: "24px" }}
+                  >
+                    <a
+                      className="tmp-btn hover-icon-reverse radius-round"
+                      href="/assets/files/JR-Polok-CV.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span className="icon-reverse-wrapper">
+                        <span className="btn-text">Download CV</span>
+                        <span className="btn-icon">
+                          <i className="fa-sharp fa-regular fa-arrow-down" />
+                        </span>
+                        <span className="btn-icon">
+                          <i className="fa-sharp fa-regular fa-arrow-down" />
+                        </span>
+                      </span>
+                    </a>
+                    <a
+                      className="tmp-btn hover-icon-reverse radius-round btn-border"
+                      href="https://bd.linkedin.com/in/engnrpolok"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span className="icon-reverse-wrapper">
+                        <span className="btn-text">LinkedIn</span>
+                        <span className="btn-icon">
+                          <i className="fa-brands fa-linkedin-in" />
+                        </span>
+                        <span className="btn-icon">
+                          <i className="fa-brands fa-linkedin-in" />
+                        </span>
+                      </span>
+                    </a>
+                    <a
+                      className="tmp-btn hover-icon-reverse radius-round btn-border"
+                      href="mailto:hello@jrpolok.com"
+                    >
+                      <span className="icon-reverse-wrapper">
+                        <span className="btn-text">Contact Me</span>
+                        <span className="btn-icon">
+                          <i className="fa-sharp fa-regular fa-arrow-right" />
+                        </span>
+                        <span className="btn-icon">
+                          <i className="fa-sharp fa-regular fa-arrow-right" />
+                        </span>
+                      </span>
+                    </a>
+                  </div>
+                  <p
+                    style={{ opacity: 0.65, fontSize: "14px", marginTop: "20px" }}
+                    className="tmp-scroll-trigger tmp-fade-in animation-order-4"
+                  >
+                    Open to European Opportunities
                   </p>
                 </div>
               </div>

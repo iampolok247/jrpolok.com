@@ -1,5 +1,5 @@
 import OdometerComponent from "./OdometerComponent";
-import { counters } from "@/data/facts";
+import { counters, heroCounter } from "@/data/facts";
 
 export default function Facts() {
   return (
@@ -9,19 +9,16 @@ export default function Facts() {
           <div className="col-12 col-lg-6 col-xl-6 col-xxl-6">
             <div className="year-of-expariance-wrapper bg-blur-style-one tmp-scroll-trigger tmp-fade-in animation-order-1">
               <div className="year-expariance-wrap">
-                {/* <h2 class="year-number"><span class="counter">25 </span> </h2> */}
                 <h2 className="counter year-number">
-                  <OdometerComponent max={8} />
+                  <OdometerComponent max={heroCounter.count} />
+                  {heroCounter.suffix}
                 </h2>
-                <h3 className="year-title">
-                  Years Building <br />
-                  Digital Solutions
-                </h3>
+                <h3 className="year-title">{heroCounter.title}</h3>
               </div>
               <p className="year-para">
-                From software engineering to AI automation and digital
-                marketing, I deliver practical solutions that improve business
-                outcomes and long-term growth.
+                From digital marketing and SEO to AI automation and AI agents,
+                I deliver practical solutions that improve visibility, generate
+                leads and streamline business operations.
               </p>
             </div>
           </div>
@@ -34,8 +31,14 @@ export default function Facts() {
                       className={`counter-card tmponhover tmp-scroll-trigger tmp-fade-in animation-order-${item.order}`}
                     >
                       <h3 className="counter counter-title">
-                        <OdometerComponent max={item.count} />
-                        {item.suffix}
+                        {item.isText ? (
+                          item.value
+                        ) : (
+                          <>
+                            <OdometerComponent max={item.count as number} />
+                            {item.suffix}
+                          </>
+                        )}
                       </h3>
                       <p className="counter-para">{item.text}</p>
                     </div>

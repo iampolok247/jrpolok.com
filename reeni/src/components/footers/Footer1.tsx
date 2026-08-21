@@ -7,6 +7,7 @@ import Sidebar from "../headers/Sidebar";
 import MobileMenu from "../headers/MobileMenu";
 import MobileMenuOnepage from "../headers/MobileMenuOnepage";
 import { footerLinks, footerLinksWhite } from "@/data/footerLinks";
+import { primaryExpertise, additionalSkills } from "@/data/footerExpertise";
 export default function Footer1({
   darkLogo = "/assets/images/jrpolok/jrpolok-logo.png",
   lightLogo = "/assets/images/jrpolok/jrpolok-logo.png",
@@ -40,8 +41,25 @@ export default function Footer1({
                     </Link>
                   </div>
                   <p className="description">
-                    <span>J R Polok</span> | Full-Stack Development, Digital Marketing, CRM & Automation
+                    <span>J R Polok</span>
+                    <br />
+                    Digital Marketing & SEO Specialist
+                    <br />
+                    AI Automation & AI Agents
                   </p>
+                  <div className="tag-items mb--20">
+                    <ul>
+                      {["Digital Marketing", "SEO", "AI Automation", "AI Agents", "PHP/Laravel", "Canva"].map(
+                        (tag) => (
+                          <li key={tag}>
+                            <a href="#" className="tag-item">
+                              {tag}
+                            </a>
+                          </li>
+                        )
+                      )}
+                    </ul>
+                  </div>
                   <form
                     onSubmit={(e) => e.preventDefault()}
                     className="newsletter-form-1 mt--40"
@@ -110,6 +128,40 @@ export default function Footer1({
                     </a>
                   </div>
                 </div>
+              </div>
+            </div>
+            <div className="footer-expertise-wrap mt--40 pt--40" style={{ borderTop: "1px solid rgba(255,255,255,0.08)" }}>
+              <h5 className="ft-title mb--20">Primary Expertise</h5>
+              <div className="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-4">
+                {primaryExpertise.map((group) => (
+                  <div key={group.title}>
+                    <div className="single-footer-wrapper">
+                      <h6 className="ft-title" style={{ fontSize: "15px" }}>{group.title}</h6>
+                      <ul className="ft-link tmp-link-animation">
+                        {group.skills.map((skill) => (
+                          <li key={skill}>{skill}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                ))}
+                {additionalSkills.map((group) => (
+                  <div key={group.title}>
+                    <div className="single-footer-wrapper">
+                      <h6 className="ft-title" style={{ fontSize: "15px" }}>
+                        {group.title}
+                        <span style={{ opacity: 0.5, fontSize: "11px", fontWeight: 400, display: "block" }}>
+                          Additional Skills
+                        </span>
+                      </h6>
+                      <ul className="ft-link tmp-link-animation">
+                        {group.skills.map((skill) => (
+                          <li key={skill}>{skill}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
           </div>

@@ -1,10 +1,11 @@
+// TODO: replace with real client/employer quotes before publishing.
 export const testimonials = [
   {
     id: 1,
     quote:
-      "Working with themespark was an absolute pleasure! They understood my vision immediately and brought it to life even better than I'd imagined.",
-    name: "Cameron Williamson",
-    role: "Ui/Ux Designer",
+      "[Add a testimonial quote from a UK client or organisation you've worked with.]",
+    name: "[Client Name]",
+    role: "[Role, UK Company Name]",
     bgImage: "/assets/images/testimonial/bg-image-1png.png",
     width: 630,
     height: 720,
@@ -13,9 +14,9 @@ export const testimonials = [
   {
     id: 2,
     quote:
-      "ThemesPark is incredibly talented and detail-oriented. They took the time to understand my brand and created something truly unique",
-    name: "Cameron Williamson",
-    role: "Ui/Ux Designer",
+      "[Add a testimonial quote from a Bangladesh-based organisation you've worked with.]",
+    name: "[Client Name]",
+    role: "[Role, Bangladesh Organisation Name]",
     bgImage: "/assets/images/testimonial/bg-image-2.png",
     width: 444,
     height: 484,
@@ -24,9 +25,9 @@ export const testimonials = [
   {
     id: 3,
     quote:
-      "A personal portfolio is a curated collection of an individual's professional work, showcasing their skills, experience, and achievements",
-    name: "Cameron Williamson",
-    role: "Ui/Ux Designer",
+      "[Add a testimonial quote about a technical or client project you delivered.]",
+    name: "[Client Name]",
+    role: "[Role, Company Name]",
     bgImage: "/assets/images/testimonial/bg-image-1png.png",
     width: 630,
     height: 720,

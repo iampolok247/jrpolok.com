@@ -1,40 +1,68 @@
 import { educationExperienceData } from "@/data/education";
+import { Link } from "react-router-dom";
+
+const impactExamples = [
+  {
+    icon: "fa-light fa-arrow-trend-up",
+    title: "SEO Automation",
+    description:
+      "Automating repetitive SEO research, content workflows and reporting.",
+  },
+  {
+    icon: "fa-light fa-diagram-project",
+    title: "Lead Management",
+    description:
+      "Connecting campaigns, CRM and automated follow-up workflows.",
+  },
+  {
+    icon: "fa-light fa-robot",
+    title: "AI Agents",
+    description:
+      "Building intelligent agents for business tasks, research and customer workflows.",
+  },
+  {
+    icon: "fa-light fa-gears",
+    title: "Marketing Automation",
+    description:
+      "Reducing manual work through connected tools, APIs and AI-powered processes.",
+  },
+];
 
 const experienceHighlights = [
   {
-    label: "2015 - 2019",
-    company: "Niloy IT Farm",
-    title: "Digital Marketing Specialist",
+    label: "2025 - Present",
+    company: "Prime Academy Bangladesh",
+    title: "Sr. Officer – Digital Marketing",
     description:
-      "Generated B2B leads through web research and targeted outreach while maintaining lead databases and sales support workflows.",
+      "Managing SEO, paid ads, social media, CRM operations and high-converting lead generation landing pages for the organization.",
   },
   {
-    label: "2020 - 2021",
-    company: "Quality Coders Inc.",
-    title: "Frontend Developer",
+    label: "Add exact dates",
+    company: "Zephyr Recruit",
+    title: "Web Developer & Sr. Officer – Digital Marketing",
     description:
-      "Developed responsive user interfaces, optimized website performance and collaborated closely with backend teams on product delivery.",
+      "Built and maintained the recruitment platform while running digital marketing and lead generation for hiring campaigns.",
   },
   {
-    label: "2021 - 2023",
-    company: "Global Technologies Enterprises",
-    title: "Digital Marketing Strategist & Android Developer",
+    label: "Add exact dates",
+    company: "Workforce Training & Development Ltd",
+    title: "Sr. Officer – Digital Marketing",
     description:
-      "Managed Android app publishing, paid campaigns, social content and SEO/ASO activities to support audience growth and visibility.",
+      "Managed SEO, paid campaigns and lead generation to support training enrollment and audience growth.",
+  },
+  {
+    label: "Add exact dates",
+    company: "The Prime College",
+    title: "Sr. Officer – Digital Marketing",
+    description:
+      "Ran SEO, social media and paid advertising to support student admissions and brand visibility.",
   },
   {
     label: "2023 - 2024",
     company: "CodersFly",
-    title: "Chief Technology Officer & Co-Founder",
+    title: "Chief Technology Officer",
     description:
       "Led technology strategy, product delivery and team allocation while building scalable web applications and automation systems.",
-  },
-  {
-    label: "2025 - Present",
-    company: "Prime Academy Bangladesh",
-    title: "Digital Marketing Specialist",
-    description:
-      "Managing SEO, paid ads, social media, CRM operations and high-converting lead generation landing pages for the organization.",
   },
 ];
 
@@ -47,14 +75,27 @@ export default function Education() {
             <span className="subtitle">Education &amp; Experience</span>
           </div>
           <h2 className="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2">
-            Building Innovation Through <br />
-            Technology & Strategy
+            Marketing Meets AI & Technology
           </h2>
           <p className="description section-sm tmp-scroll-trigger tmp-fade-in animation-order-3">
-            My background combines software development, digital marketing,
-            CRM operations and product execution across agency, startup and
-            education-driven organizations.
+            Combining marketing expertise with AI and technology to create
+            more efficient digital growth systems.
           </p>
+        </div>
+        <div className="row g-5 mb--60">
+          {impactExamples.map((item, index) => (
+            <div className="col-lg-3 col-sm-6" key={index}>
+              <div
+                className={`education-experience-card tmponhover tmp-scroll-trigger tmp-fade-in animation-order-${index + 1}`}
+              >
+                <div className="card-icon" style={{ fontSize: "26px", color: "var(--color-primary, #f5a623)", marginBottom: "14px" }}>
+                  <i className={item.icon} />
+                </div>
+                <h4 className="edu-sub-title">{item.title}</h4>
+                <p className="edu-para">{item.description}</p>
+              </div>
+            </div>
+          ))}
         </div>
         <h2 className="custom-title mb-32 tmp-scroll-trigger tmp-fade-in animation-order-1">
           Education
@@ -108,6 +149,20 @@ export default function Education() {
                     <p className="ex-para">{item.description}</p>
                   </div>
                 ))}
+                <Link
+                  className="tmp-btn hover-icon-reverse radius-round btn-border mt--20"
+                  to="/resume"
+                >
+                  <span className="icon-reverse-wrapper">
+                    <span className="btn-text">View Full Experience</span>
+                    <span className="btn-icon">
+                      <i className="fa-sharp fa-regular fa-arrow-right" />
+                    </span>
+                    <span className="btn-icon">
+                      <i className="fa-sharp fa-regular fa-arrow-right" />
+                    </span>
+                  </span>
+                </Link>
               </div>
             </div>
             <div className="col-lg-6">

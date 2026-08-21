@@ -3,30 +3,30 @@ import { slugify } from "@/utlis/slugify";
 export const services = [
   {
     id: 1,
-    icon: "fa-light fa-code",
-    title: "Full-Stack Development",
-    projects: "Web Apps, CMS and Platforms",
+    icon: "fa-light fa-bullhorn",
+    title: "Digital Marketing",
+    projects: "SEO, Performance Marketing, Lead Generation & Content Strategy",
     animationOrder: "1",
   },
   {
     id: 2,
-    icon: "fa-light fa-bullhorn",
-    title: "Digital Marketing",
-    projects: "SEO, Ads and Social Growth",
+    icon: "fa-light fa-chart-line",
+    title: "SEO & Growth",
+    projects: "Technical SEO, On-page SEO, Keyword Research & Conversion Optimisation",
     animationOrder: "2",
   },
   {
     id: 3,
-    icon: "fa-light fa-mobile-screen-button",
-    title: "Android & Flutter Apps",
-    projects: "Mobile App Delivery",
+    icon: "fa-light fa-gears",
+    title: "AI Automation",
+    projects: "AI-powered workflows, business automation & process optimisation",
     animationOrder: "3",
   },
   {
     id: 4,
-    icon: "fa-light fa-diagram-project",
-    title: "CRM & Automation",
-    projects: "Lead Systems and Workflow Tools",
+    icon: "fa-light fa-robot",
+    title: "AI Agents",
+    projects: "AI agents, API integrations & intelligent business workflows",
     animationOrder: "4",
   },
 ].map((elm) => {
@@ -215,19 +215,24 @@ export const serviceCards = [
 
 export const services5 = [
   {
-    title: "Full-Stack Web Development",
+    title: "Grow",
     description:
-      "I build web applications, business websites and backend systems using PHP, Laravel, JavaScript, React, Node.js and MongoDB.",
+      "SEO, paid advertising, content strategy and lead generation.",
   },
   {
-    title: "Digital Marketing & Lead Generation",
+    title: "Automate",
     description:
-      "I manage SEO, paid ads, content and social media execution to improve visibility, lead quality and campaign ROI.",
+      "AI-powered workflows that reduce repetitive tasks and improve productivity.",
   },
   {
-    title: "CRM, Automation & Product Delivery",
+    title: "Build",
     description:
-      "I design custom CRM systems, automate operational workflows and manage projects from planning through deployment.",
+      "PHP/Laravel applications, CRM systems, landing pages and API integrations.",
+  },
+  {
+    title: "Create",
+    description:
+      "Canva-based marketing creatives, campaign assets and digital content.",
   },
 ];
 export const serviceCards2 = [

@@ -22,22 +22,22 @@ export const awardsData: Award[] = [
   },
   {
     id: 2,
-    title: "Cyber Security & Ethical Hacking Career Track",
-    issuer: "Ostad",
-    year: "2026",
-    category: "certificate",
-    description:
-      "Completed practical cybersecurity training covering ethical hacking, network security, vulnerability assessment and Kali Linux tool usage.",
-    icon: "fa-solid fa-certificate",
-  },
-  {
-    id: 3,
     title: "Career Essentials in Generative AI",
     issuer: "Microsoft & LinkedIn",
     year: "2023",
     category: "certificate",
     description:
       "Completed professional training in generative AI concepts, tools and practical business applications.",
+    icon: "fa-solid fa-medal",
+  },
+  {
+    id: 3,
+    title: "Certificate of Appreciation",
+    issuer: "Prime Academy Bangladesh",
+    year: "2025",
+    category: "certificate",
+    description:
+      "Recognized for developing a customized software system that improved operational efficiency and technology-driven delivery.",
     icon: "fa-solid fa-medal",
   },
   {
@@ -52,12 +52,12 @@ export const awardsData: Award[] = [
   },
   {
     id: 5,
-    title: "Certificate of Appreciation",
-    issuer: "Prime Academy Bangladesh",
-    year: "2025",
+    title: "Cyber Security & Ethical Hacking Career Track",
+    issuer: "Ostad",
+    year: "2026",
     category: "certificate",
     description:
-      "Recognized for developing a customized software system that improved operational efficiency and technology-driven delivery.",
-    icon: "fa-solid fa-medal",
+      "Completed practical cybersecurity training covering ethical hacking, network security, vulnerability assessment and Kali Linux tool usage.",
+    icon: "fa-solid fa-certificate",
   },
 ];

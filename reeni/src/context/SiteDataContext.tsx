@@ -34,15 +34,21 @@ export interface PortfolioItem {
   height: number;
   title: string;
   description: string;
+  problem?: string;
+  solution?: string;
+  impact?: string;
+  tags?: string[];
   slug: string;
   projectUrl?: string;
 }
 
 export interface HeroData {
   name: string;
-  subtitle: string;
+  headlineLine1: string;
+  headlineLine2: string;
   description: string;
-  roles: string[];
+  techStack: string[];
+  availability: string;
   heroImage: string;
 }
 
@@ -58,16 +64,19 @@ export interface SiteData {
 const defaultSiteData: SiteData = {
   hero: {
     name: "J R Polok",
-    subtitle: "Digital Marketing Specialist and Full-Stack Developer",
+    headlineLine1: "Digital Marketing & SEO Specialist",
+    headlineLine2: "AI Automation & AI Agents",
     description:
-      "Digital Marketing Specialist and Full-Stack Developer with 10+ years of experience across SEO, paid advertising, social media marketing, CRM systems, automation solutions and high-converting web development.",
-    roles: [
-      "Full-Stack Developer.",
-      "Digital Marketing Specialist.",
-      "CRM & Automation Builder.",
-      "Flutter App Developer.",
-      "SEO & Lead Generation Strategist.",
+      "I combine digital marketing, SEO, performance marketing and AI-powered automation to build smarter systems that improve visibility, generate leads and streamline business operations.",
+    techStack: [
+      "Digital Marketing",
+      "SEO",
+      "AI Automation",
+      "AI Agents",
+      "PHP/Laravel",
+      "Canva",
     ],
+    availability: "Open to European Opportunities · Remote · Hybrid · Relocation",
     heroImage: "/assets/images/jrpolok/J-R-Polok%20-Hero.png",
   },
   blogs: blogData2 as BlogItem[],

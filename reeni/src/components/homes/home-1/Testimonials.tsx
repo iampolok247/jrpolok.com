@@ -8,6 +8,11 @@ export default function Testimonials() {
     <section className="testimonial tmp-section-gapTop">
       <div className="testimonial-wrapper">
         <div className="container">
+          <div className="section-head center-title mb--40">
+            <h2 className="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-1">
+              What People Say About Working With Me
+            </h2>
+          </div>
           <Swiper
             className="swiper testimonial-swiper"
             {...{

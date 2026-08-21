@@ -15,12 +15,11 @@ export default function Portfolio({ isLight = false }) {
             <span className="subtitle">Selected Works</span>
           </div>
           <h2 className="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2">
-            Real-World Solutions Across <br />
-            Development, AI & Marketing
+            Selected Projects
           </h2>
           <p className="description section-sm tmp-scroll-trigger tmp-fade-in animation-order-3">
-            Live products and business websites delivered for recruitment,
-            education, healthcare and service-focused brands.
+            Real-world solutions across digital marketing, AI, automation and
+            web technology.
           </p>
         </div>
         <div className="row">
@@ -66,7 +65,34 @@ export default function Portfolio({ isLight = false }) {
                         {item.title}
                       </Link>
                     </h3>
-                    <p className="portfoli-card-para">{item.description}</p>
+                    {item.problem && item.solution && item.impact ? (
+                      <div className="portfoli-card-para">
+                        <p>
+                          <strong>Problem:</strong> {item.problem}
+                        </p>
+                        <p>
+                          <strong>Solution:</strong> {item.solution}
+                        </p>
+                        <p>
+                          <strong>Impact:</strong> {item.impact}
+                        </p>
+                      </div>
+                    ) : (
+                      <p className="portfoli-card-para">{item.description}</p>
+                    )}
+                    {item.tags && item.tags.length > 0 && (
+                      <div className="tag-items">
+                        <ul>
+                          {item.tags.map((tag, tagIndex) => (
+                            <li key={tagIndex}>
+                              <a href="#" className="tag-item">
+                                {tag}
+                              </a>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
                   </div>
                   <Link
                     to={

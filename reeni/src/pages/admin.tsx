@@ -167,11 +167,11 @@ function LoginScreen({ onLogin }: { onLogin: () => void }) {
 function HeroEditor() {
   const { data, updateHero } = useSiteData();
   const [form, setForm] = useState<HeroData>({ ...data.hero });
-  const [rolesText, setRolesText] = useState(data.hero.roles.join("\n"));
+  const [techStackText, setTechStackText] = useState(data.hero.techStack.join("\n"));
 
   useEffect(() => {
     setForm({ ...data.hero });
-    setRolesText(data.hero.roles.join("\n"));
+    setTechStackText(data.hero.techStack.join("\n"));
   }, [data.hero]);
 
   const handleFieldChange = <K extends keyof HeroData>(field: K, value: HeroData[K]) => {
@@ -179,15 +179,15 @@ function HeroEditor() {
     setForm(next);
     updateHero({
       ...next,
-      roles: rolesText.split("\n").filter((role) => role.trim()),
+      techStack: techStackText.split("\n").filter((tag) => tag.trim()),
     });
   };
 
-  const handleRolesChange = (value: string) => {
-    setRolesText(value);
+  const handleTechStackChange = (value: string) => {
+    setTechStackText(value);
     updateHero({
       ...form,
-      roles: value.split("\n").filter((role) => role.trim()),
+      techStack: value.split("\n").filter((tag) => tag.trim()),
     });
   };
 
@@ -196,16 +196,18 @@ function HeroEditor() {
       <h4 style={{ color: "#f5a623", marginBottom: "20px" }}>Hero Section</h4>
       <div style={cardStyle}>
         <Field label="Name" value={form.name} onChange={(v) => handleFieldChange("name", v)} />
-        <Field label="Subtitle Badge" value={form.subtitle} onChange={(v) => handleFieldChange("subtitle", v)} />
+        <Field label="Headline Line 1" value={form.headlineLine1} onChange={(v) => handleFieldChange("headlineLine1", v)} />
+        <Field label="Headline Line 2" value={form.headlineLine2} onChange={(v) => handleFieldChange("headlineLine2", v)} />
         <Field label="Description" value={form.description} onChange={(v) => handleFieldChange("description", v)} textarea />
+        <Field label="Availability Line" value={form.availability} onChange={(v) => handleFieldChange("availability", v)} />
         <Field label="Hero Image Path" value={form.heroImage} onChange={(v) => handleFieldChange("heroImage", v)} />
         <div style={{ marginBottom: "14px" }}>
           <label style={{ display: "block", fontSize: "12px", marginBottom: "4px", opacity: 0.7 }}>
-            Typing Roles (one per line)
+            Tech Stack Tags (one per line)
           </label>
           <textarea
-            value={rolesText}
-            onChange={(e) => handleRolesChange(e.target.value)}
+            value={techStackText}
+            onChange={(e) => handleTechStackChange(e.target.value)}
             rows={6}
             style={inputStyle}
           />

@@ -8,6 +8,8 @@ import Education from "@/components/common/Education2";
 import Facts from "@/components/common/Facts";
 import Hero from "@/components/homes/home-1/Hero";
 import Portfolio from "@/components/common/Portfolio2";
+import ImpactProcess from "@/components/common/ImpactProcess";
+import CanvaCreative from "@/components/common/CanvaCreative";
 import Services from "@/components/common/Services";
 import Services2 from "@/components/common/Services3";
 import Skills from "@/components/common/Skills";
@@ -19,11 +21,11 @@ import Awards from "@/components/common/Awards";
 import MetaComponent from "@/components/common/Metacomponent";
 
 const metadata = {
-  title: "J R Polok | Digital Marketing Specialist and Full-Stack Developer",
+  title: "J R Polok | Digital Marketing & SEO Specialist | AI Automation & AI Agents",
   description:
-    "J R Polok is a Digital Marketing Specialist and Full-Stack Developer with 10+ years of experience in SEO, paid ads, CRM systems, automation solutions, web development and lead generation.",
+    "J R Polok is a Digital Marketing & SEO Specialist with expertise in AI Automation and AI Agents, combining performance marketing, SEO, PHP/Laravel and Canva to build smarter growth systems.",
   keywords:
-    "J R Polok, Digital Marketing Specialist Bangladesh, Full Stack Developer Bangladesh, CRM Developer Bangladesh, SEO Specialist Bangladesh, Laravel Developer Bangladesh, React Developer Bangladesh, Lead Generation Expert Bangladesh, Web Developer Bangladesh",
+    "J R Polok, Digital Marketing Specialist, SEO Specialist, AI Automation Specialist, AI Agents, Performance Marketing, Lead Generation Expert, PHP Laravel Developer, Canva Designer",
   canonical: "https://jrpolok.com/",
   ogImage: "https://jrpolok.com/assets/images/jrpolok/J-R-Polok-2nd.png",
 };
@@ -41,6 +43,8 @@ export default function HomePage() {
       <Awards />
       <Brands />
       <Portfolio />
+      <ImpactProcess />
+      <CanvaCreative />
       <Skills2 />
       <Testimonials />
       <Contact />

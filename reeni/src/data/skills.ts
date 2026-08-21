@@ -67,31 +67,48 @@ export const skills = [
 
 export const skillSections = [
   {
-    title: "Engineering & AI Skill",
+    title: "Digital Marketing & Growth",
+    icon: "fa-light fa-bullhorn",
     skills: [
-      { name: "JavaScript / TypeScript", percent: 95, duration: "0.5s", delay: ".3s" },
-      { name: "PHP / Laravel", percent: 90, duration: "0.6s", delay: ".4s" },
-      { name: "Django (Python)", percent: 88, duration: "0.7s", delay: ".5s" },
-      {
-        name: "AI Automation & Prompting",
-        percent: 92,
-        duration: "0.8s",
-        delay: ".6s",
-      },
+      "SEO & Content Strategy",
+      "Performance Marketing",
+      "Meta & Google Ads",
+      "Lead Generation",
+      "Conversion Optimisation",
+      "Social Media Marketing",
     ],
   },
   {
-    title: "Marketing & Security Skill",
+    title: "AI & Automation",
+    icon: "fa-light fa-robot",
     skills: [
-      { name: "SEO & Content Strategy", percent: 90, duration: "0.5s", delay: ".3s" },
-      { name: "Paid Ads & Social Campaigns", percent: 87, duration: "0.6s", delay: ".4s" },
-      { name: "Cyber Security / VAPT", percent: 84, duration: "0.7s", delay: ".5s" },
-      {
-        name: "WordPress & Bootstrap",
-        percent: 89,
-        duration: "0.8s",
-        delay: ".6s",
-      },
+      "AI Automation",
+      "AI Agents",
+      "Prompt Engineering",
+      "Workflow Automation",
+      "API Integration",
+      "CRM Automation",
+    ],
+  },
+  {
+    title: "Technical",
+    icon: "fa-light fa-code",
+    skills: [
+      "PHP / Laravel",
+      "Python / Django",
+      "JavaScript",
+      "REST APIs",
+      "CRM & Web Applications",
+    ],
+  },
+  {
+    title: "Creative",
+    icon: "fa-light fa-palette",
+    skills: [
+      "Canva",
+      "Social Media Design",
+      "Marketing Creatives",
+      "Landing Page Design",
     ],
   },
 ];
